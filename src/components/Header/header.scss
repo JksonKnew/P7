@@ -1,5 +1,27 @@
+@import "../../utils/styles/mixin.scss";
+@import "../../utils/styles/style.scss";
+
+
 .header-container {
-    background-color: aqua;
-    height: 100px;
-    width: 100%;
+    display: flex;
+    width: auto;
+    height: 68px;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    fill: $primary;
+    .nav-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 57px;
+        a {
+            @include text;
+            color: $primary;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }            
+        }
+    }
 }
