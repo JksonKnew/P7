@@ -1,0 +1,19 @@
+@import "../../utils/styles/mixin.scss";
+@import "../../utils/styles/style.scss";
+
+
+.footer-section {
+    display: flex;
+    width: auto;
+    height: 209px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28.556px;
+    background-color: black;
+    color: white;
+    @include text;
+    path {
+        fill: white;
+    }
+}
