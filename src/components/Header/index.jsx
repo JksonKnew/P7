@@ -14,8 +14,8 @@ function Header() {
             </svg>
         </div>
         <nav className='nav-container'>
-            <Link>Accueil</Link>
-            <Link>A propos</Link>
+            <Link to="/">Accueil</Link>
+            <Link to="/about">A propos</Link>
         </nav>
     </section>)
 }

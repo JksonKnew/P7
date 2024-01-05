@@ -1,0 +1,25 @@
+@import "../../utils/styles/mixin.scss";
+@import "../../utils/styles/style.scss";
+
+.banner-container {
+    width: auto;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    border-radius: 25px;
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 25px;
+        opacity: 0.6;
+    }
+    span {
+        @include text;
+        color: white;
+        position: absolute;
+        font-size: 48px;
+    }
+}
