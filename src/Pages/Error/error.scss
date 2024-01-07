@@ -1,0 +1,21 @@
+@import "../../utils/styles/mixin.scss";
+@import "../../utils/styles/style.scss";
+
+
+.Content {
+    @include text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px;
+    gap: 140px;
+    color: $primary;
+    .ErrorCode {
+        font-size: 288px;
+        font-weight: 700;
+    }
+    a {
+        color: $primary;
+    }
+}
