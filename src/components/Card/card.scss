@@ -23,7 +23,7 @@
         border-radius: 25px;
     }
     .CardText {
-        @include text;
+        @include smallText;
         color: white;
         position: absolute;
         display: flex;
@@ -31,3 +31,11 @@
         padding: 20px;
     }
 }
+
+
+@media only screen and (max-width: 1250px) {
+    .Card{
+        height: 250px;
+        width: 100%;
+    }
+  }

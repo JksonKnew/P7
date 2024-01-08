@@ -2,13 +2,14 @@
 @import "../../utils/styles/style.scss";
 
 .banner-container {
-    width: auto;
+    width: 100%;
     height: 230px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: black;
     border-radius: 25px;
+    max-width: 1240px;
     img {
         object-fit: cover;
         height: 100%;
@@ -17,9 +18,19 @@
         opacity: 0.6;
     }
     span {
-        @include text;
+        @include bigText;
         color: white;
         position: absolute;
         font-size: 48px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .banner-container {
+        height: 120px;
+        span {
+            padding: 0px 20px;
+            @include mainText
+        }
     }
 }
