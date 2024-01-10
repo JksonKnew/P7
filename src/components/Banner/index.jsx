@@ -1,11 +1,11 @@
 import './banner.scss'
 import React from 'react'
 
-function Banner() {
+function Banner(props) {
     return (
         <div className='banner-container'>
-            <img src="src/Assets/homeBannerImg.png" alt="" />
-            <span>Chez vous, partout ailleurs</span>
+            <img src={props.src} alt="" />
+            <span>{props.span}</span>
         </div>
     )
 }
