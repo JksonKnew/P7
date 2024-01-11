@@ -1,6 +1,6 @@
 import './header.scss'
 import React from 'react'
-import { Link, RouterProvider, createBrowserRouter } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 function Header() {
     return (<section className='header-container'>
@@ -20,4 +20,4 @@ function Header() {
     </section>)
 }
 
-export default Header
+export default Header;

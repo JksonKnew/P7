@@ -1,11 +1,18 @@
+import { useNavigate } from 'react-router-dom'
+import { logements } from '../../data/logements'
 import './card.scss'
 import React from 'react'
 
 
-
 function Card(props) {
+
+    const navigate = useNavigate()
+    const logementsDirection = () => {
+        navigate(`/logement/${props.id}`)
+    }
+
     return ( 
-    <article className='Card'>
+    <article onClick={logementsDirection} className='Card'>
         <div className='Gradient'></div>
         <img src={props.src} alt="img" />
         <div className='CardText'>
@@ -20,16 +27,3 @@ export default Card
 
 
 
-
-// function Card() {
-//     return ( 
-//     <article className='Card'>
-//         <div className='Gradient'></div>
-//         <img src="src/Assets/homeBannerImg.png" alt="img" />
-//         <div className='CardText'>
-//             <span className='CardTitle'>Titre de la location</span>
-//             <span className='CardLocation'>Location</span>
-//         </div>
-//     </article>
-//     )
-// }

@@ -15,7 +15,6 @@ const securite = ["La sécurité est la priorité de Kasa. Aussi bien pour nos h
 
 function AboutPage() {
     return (<React.Fragment>
-    <Header/>
     <Banner src="src/Assets/b9995860bb6384a77ca7dc9bf52da3be.jpeg" span=''/>
     <div className="listContainer">
     <Folding title="Fiabilité" content={fiabilité}/>
@@ -23,8 +22,6 @@ function AboutPage() {
     <Folding title="Service" content={service}/>
     <Folding title="Sécurité" content={securite}/>
     </div>
-    <Footer/>
-    <RatingStars/>
     </React.Fragment>)
 }
 

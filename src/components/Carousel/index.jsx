@@ -4,7 +4,7 @@ import './carousel.scss';
 const images = [
     "/src/Assets/homeBannerImg.png",
     "/src/Assets/b9995860bb6384a77ca7dc9bf52da3be.jpeg",
-    "/src/Assets/b9995860bb6384a77ca7dc9bf52da3be.jpeg",
+    "/src/Assets/homeBannerImg.png",
     "/src/Assets/b9995860bb6384a77ca7dc9bf52da3be.jpeg"
 ];
 
@@ -22,10 +22,13 @@ const Carousel = () => {
 
   return (
     <div className="carouselContainer">
-      <button onClick={PrevSlide}>Prev</button>
+        <div className='overlayCarousel'>
+            <button className='left' onClick={PrevSlide}>Prev</button>
+            <span className='carouselCounter'>{currentIndex + 1}/{images.length}</span>
+            <button className='rightCarouselBtn' onClick={NextSlide}>Next</button>
+        </div>
       <img src={images[currentIndex]} />
-      <span className='carouselCounter'>{currentIndex + 1}/{images.length}</span>
-      <button onClick={NextSlide}>Next</button>
+
     </div>
   );
 };

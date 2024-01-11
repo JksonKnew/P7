@@ -1,37 +1,17 @@
 import './cardGallery.scss'
 import React from 'react'
 import Card from '../Card'
+import { logements } from '../../data/logements'
 
-// let content = [];
 
-// function getWorks() {
-//     fetch("./logements.json")
-//     .then(response => response.json())
-//     .then(json => {
-//         content = json;
-//         CardCreating(content)
-//     })
-//     .catch(error => console.error(error))
-// }
-
-// function CardCreating(content) {
-//     return content.map((item, index) => (
-//       <Card key={index} src={item.cover} title={item.title} location={item.location} />
-//     ));
-// }
 
 function CardGallery() {
     return (
         <section className='CardGallery'>
             <div className='CardContainer'>
-                <Card src="src/Assets/homeBannerImg.png" title="Joli appartememnt" location="Paris"/>
-                <Card src="src/Assets/homeBannerImg.png" title="Joli appartememnt" location="Paris"/>
-                <Card src="src/Assets/homeBannerImg.png" title="Joli appartememnt" location="Paris"/>
-                <Card src="src/Assets/homeBannerImg.png" title="Joli appartememnt" location="Paris"/>
-                <Card src="src/Assets/homeBannerImg.png" title="Joli appartememnt" location="Paris"/>
-                <Card src="src/Assets/homeBannerImg.png" title="Joli appartememnt" location="Paris"/>
-                <Card src="src/Assets/homeBannerImg.png" title="Joli appartememnt" location="Paris"/>
-                <Card src="src/Assets/homeBannerImg.png" title="Joli appartememnt" location="Paris"/>
+                {logements.map((logement)=> (
+                    <Card key={logement.id} src={logement.cover} title={logement.title} location={logement.location} id={logement.id}/>
+                ))}
             </div>
         </section>
     )
