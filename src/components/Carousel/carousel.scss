@@ -1,0 +1,8 @@
+@import "../../utils/styles/mixin.scss";
+@import "../../utils/styles/style.scss";
+
+.carouselContainer {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}

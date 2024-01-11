@@ -5,6 +5,7 @@ import Folding from "../../components/Folding";
 import Banner from "../../components/Banner";
 
 import "./about.scss";
+import RatingStars from "../../components/Rating";
 
 const fiabilité = ["Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes"];
 const respect = ["La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme"];
@@ -15,7 +16,7 @@ const securite = ["La sécurité est la priorité de Kasa. Aussi bien pour nos h
 function AboutPage() {
     return (<React.Fragment>
     <Header/>
-    <Banner src="src/Assets/homeBannerImg.png" span=''/>
+    <Banner src="src/Assets/b9995860bb6384a77ca7dc9bf52da3be.jpeg" span=''/>
     <div className="listContainer">
     <Folding title="Fiabilité" content={fiabilité}/>
     <Folding title="Respect" content={respect}/>
@@ -23,6 +24,7 @@ function AboutPage() {
     <Folding title="Sécurité" content={securite}/>
     </div>
     <Footer/>
+    <RatingStars/>
     </React.Fragment>)
 }
 
