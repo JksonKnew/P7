@@ -3,8 +3,11 @@ import './carousel.scss';
 
 const images = [
     "/src/Assets/homeBannerImg.png",
+    "/src/Assets/b9995860bb6384a77ca7dc9bf52da3be.jpeg",
+    "/src/Assets/b9995860bb6384a77ca7dc9bf52da3be.jpeg",
     "/src/Assets/b9995860bb6384a77ca7dc9bf52da3be.jpeg"
 ];
+
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,9 +24,11 @@ const Carousel = () => {
     <div className="carouselContainer">
       <button onClick={PrevSlide}>Prev</button>
       <img src={images[currentIndex]} />
+      <span className='carouselCounter'>{currentIndex + 1}/{images.length}</span>
       <button onClick={NextSlide}>Next</button>
     </div>
   );
 };
+console.log(images.length)
 
 export default Carousel;
