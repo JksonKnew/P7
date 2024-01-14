@@ -1,12 +1,26 @@
 import React, { Fragment } from "react";
 
-import './rating.scss'
+import '/src/components/Rating/rating.scss'
 
 
-function RatingStars() {
-    <div className="ratingContener">
-        <i class="fa-solid fa-star"></i>
-    </div>
-}
+function RatingStars(props) {
+    const rating = 3;
+  
+    const stars = [];
+    for (let i = 0; i < 5; i++) {
+      const starClass = i < rating ? "fa-solid fa-star active" : "fa-solid fa-star";
+      stars.push(<i key={i} className={starClass}></i>);
+    }
+  
+    return (
+      <React.Fragment>
+        <div className="ratingContainer">
+          {stars}
+        </div>
+      </React.Fragment>
+    );
+  }
+  
+  export default RatingStars;
+  
 
-export default RatingStars;

@@ -1,0 +1,23 @@
+@import "../../utils/styles/mixin.scss";
+@import "../../utils/styles/style.scss";
+
+.hostContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    .hostPicture {
+        border-radius: 50%;
+        height: 64px;
+        overflow: hidden;
+        object-fit: cover;
+        display: flex;
+    }
+    .hostName {
+        text-align: end;
+        pre {
+            margin: 0px;
+        }
+    }
+}

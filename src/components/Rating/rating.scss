@@ -1,2 +1,14 @@
 @import "../../utils/styles/mixin.scss";
 @import "../../utils/styles/style.scss";
+
+.ratingContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: end;
+    color: $grey;
+    
+    .active {
+        color: $primary;
+    }
+}
