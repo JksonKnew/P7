@@ -4,7 +4,7 @@ import '/src/components/Rating/rating.scss'
 
 
 function RatingStars(props) {
-    const rating = 3;
+    const rating = props.rating;
   
     const stars = [];
     for (let i = 0; i < 5; i++) {

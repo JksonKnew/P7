@@ -2,11 +2,13 @@
 @import "../../utils/styles/style.scss";
 
 .logementSection {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 50px;
+    margin: 0px 20px;
+    width: -webkit-fill-available;
     .infoContainer {
         display: flex;
         flex-direction: row;
@@ -44,5 +46,11 @@
             flex-direction: column;
             gap: 10px;
         }
+    }
+    .foldingParts {
+        display: flex;
+        width: 100%;
+        max-width: 1240px;
+        gap: 30px;
     }
 }

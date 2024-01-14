@@ -21,7 +21,6 @@ function LogementPage() {
     // use effect pour verifier que l'id existe et si non redirect 404 (useNavigate)
 
     return (<React.Fragment>
-        <div>{id}</div>
         <section className="logementSection">
             <Carousel i={thisLogement.pictures}/>
             <div className="infoContainer">
@@ -42,8 +41,8 @@ function LogementPage() {
                 </div>
             </div>
             <div className="foldingParts">
-                <Folding/>
-                <Folding/>
+                <Folding title="Description" content={thisLogement.description}/>
+                <Folding title="Équipements" content={thisLogement.equipments}/>
             </div>
             
 

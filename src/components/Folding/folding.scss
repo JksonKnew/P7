@@ -39,6 +39,17 @@
             margin: 0;
             padding: 0;
         }
+        p {
+            @include smallText;
+            color: $primary;
+            font-weight: 300;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin: 0;
+            padding: 0;
+        }
     }
 }
 
