@@ -20,4 +20,4 @@ function Header() {
     </section>)
 }
 
-export default Header;
+export default Header

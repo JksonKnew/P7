@@ -1,9 +1,8 @@
-import Header from "../../components/Header/index";
-import Footer from "../../components/Footer/index";
-import React, { Fragment } from "react";
+import React from "react";
 import Folding from "../../components/Folding";
 import Carousel from "../../components/Carousel";
 import { useParams } from "react-router-dom";
+
 
 
 function LogementPage() {
@@ -12,6 +11,7 @@ function LogementPage() {
     // use effect pour verifier que l'id existe et si non redirect 404 (useNavigate)
 
     return (<React.Fragment>
+        <div>{id}</div>
         <section className="logementSection">
             <Carousel/>
             <div className="infoContainer">
@@ -27,6 +27,7 @@ function LogementPage() {
                 <Folding/>
             </div>
             
+
         </section>
     </React.Fragment>)
 }

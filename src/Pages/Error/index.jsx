@@ -1,6 +1,4 @@
-import Header from "../../components/Header/index";
-import Footer from "../../components/Footer/index";
-import React, { Fragment } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import './error.scss'

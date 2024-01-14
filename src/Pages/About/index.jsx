@@ -1,6 +1,4 @@
-import Header from "../../components/Header/index";
-import Footer from "../../components/Footer/index";
-import React, { Fragment } from "react";
+import React from "react";
 import Folding from "../../components/Folding";
 import Banner from "../../components/Banner";
 
