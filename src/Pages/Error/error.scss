@@ -20,30 +20,3 @@
     }
 }
 
-@media only screen and (max-width: 800px) {
-    .Content {
-        margin: 50px 40px;
-        .ErrorCode {
-            font-size: 175px;
-        }
-        .Message {
-            text-align: center;
-        }
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .Content {
-        .ErrorCode {
-            font-size: 100px;
-        }
-        .Message {
-            text-align: center;
-            @include smallText
-        }
-        a {
-            text-align: center;
-            @include smallText
-        }
-    }
-}

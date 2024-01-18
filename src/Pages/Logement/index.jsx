@@ -17,8 +17,7 @@ function LogementPage() {
         return obj.id === id;
     })
 
-    console.log(thisLogement)
-    // use effect pour verifier que l'id existe et si non redirect 404 (useNavigate)
+    // use effec t pour verifier que l'id existe et si non redirect 404 (useNavigate)
 
     return (<React.Fragment>
         <section className="logementSection">

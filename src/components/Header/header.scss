@@ -26,20 +26,3 @@
     }
 }
 
-@media only screen and (max-width: 1250px) {
-    .header-container{
-        padding: 0px;
-        .nav-container {
-            margin: 0px 20px;
-            gap: 30px;
-            a {
-                font-weight: 500;
-                font-size: 12px;
-            }
-        }
-        .logo-container svg {
-            width: 145px;
-            padding-left: 20px;
-        }
-    }
-}

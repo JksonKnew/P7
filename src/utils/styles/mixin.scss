@@ -1,2 +1,26 @@
 $primary: #FF6060;
-$grey: #F6F6F6
+$grey: #F6F6F6;
+
+
+
+@mixin smallText {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+@mixin mainText {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+@mixin bigText {
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+}
+

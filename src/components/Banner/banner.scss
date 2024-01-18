@@ -25,12 +25,3 @@
     }
 }
 
-@media only screen and (max-width: 1250px) {
-    .banner-container {
-        height: 120px;
-        span {
-            padding: 0px 20px;
-            @include mainText
-        }
-    }
-}

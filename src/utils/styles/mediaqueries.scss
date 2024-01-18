@@ -1,0 +1,135 @@
+@import "../../utils/styles/mixin.scss";
+
+
+// Main 
+
+@media only screen and (max-width: 1250px) {
+    .root {
+        margin: 0px;
+        gap: 20px;
+    }
+}
+
+
+// Error page 
+
+@media only screen and (max-width: 800px) {
+    .Content {
+        margin: 50px 40px;
+        .ErrorCode {
+            font-size: 175px;
+        }
+        .Message {
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .Content {
+        .ErrorCode {
+            font-size: 100px;
+        }
+        .Message {
+            text-align: center;
+            @include smallText
+        }
+        a {
+            text-align: center;
+            @include smallText
+        }
+    }
+}
+
+// Logement Page
+@media only screen and (max-width: 750px) {
+
+    .logementSection {
+        margin: 0px 10px;
+
+        .carouselContainer {
+            height: 300px;
+        }
+        .infoContainer {
+            flex-direction: column;
+            .rightPart {
+                align-items: start;
+            }
+            .leftPart {
+                flex-direction: row-reverse;
+                align-items: center;
+            }
+        }
+        .foldingParts {
+            flex-direction: column;
+        }
+    }
+}
+
+
+//************* Components ****************//
+
+// header
+@media only screen and (max-width: 1250px) {
+    .header-container{
+        padding: 0px;
+        .nav-container {
+            margin: 0px 20px;
+            gap: 30px;
+            a {
+                font-weight: 500;
+                font-size: 12px;
+            }
+        }
+        .logo-container svg {
+            width: 120px;
+            height: 50px;
+            padding-left: 20px;
+        }
+    }
+}
+
+// Banner 
+@media only screen and (max-width: 1250px) {
+    .banner-container {
+        width: -webkit-fill-available;
+        margin: 0px 10px;
+    }
+}
+
+// Card Gallery
+@media only screen and (max-width: 1250px) {
+
+    .CardGallery {
+        width: -webkit-fill-available;
+        padding: 10px;
+        .CardContainer{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0px;
+            background-color: white;
+            gap: 20px;
+        }
+    }
+}
+
+// Card 
+@media only screen and (max-width: 1250px) {
+    .Card{
+        height: 250px;
+        width: 100%;
+    }
+}
+
+
+// Banner 
+@media only screen and (max-width: 1250px) {
+    .banner-container {
+        height: 120px;
+        span {
+            padding: 0px 20px;
+            @include mainText
+        }
+    }
+}

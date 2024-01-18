@@ -3,7 +3,8 @@
 
 .listContainer {
     max-width: 1024px;
-    width: 100%;
+    width: -webkit-fill-available;
+    margin: 10px;
     display: flex;
     justify-content: center;
     flex-direction: column;
