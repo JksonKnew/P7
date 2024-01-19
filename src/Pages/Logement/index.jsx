@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Folding from "../../components/Folding";
 import Carousel from "../../components/Carousel";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { logements } from '../../data/logements'
 import '/src/Pages/Logement/logement.scss'
 import Tags from "../../components/Tags";
@@ -12,13 +12,25 @@ import RatingStars from "../../components/Rating";
 
 function LogementPage() {
 
-    const {id} = useParams()
-    const thisLogement = logements.find(obj => {
-        return obj.id === id;
-    })
-
-    // use effec t pour verifier que l'id existe et si non redirect 404 (useNavigate)
-
+    const { id } = useParams();
+    const navigate = useNavigate();
+  
+    const thisLogement = logements.find(obj => obj.id === id);
+  
+    useEffect(() => {
+      if (!thisLogement) {
+        navigate('*');
+      }
+    });
+  
+    if (!thisLogement) {
+      return (
+        <div>
+          <p>L'ID n'a pas été trouvé. Redirection vers la page d'erreur...</p>
+        </div>
+      );
+    }
+  
     return (<React.Fragment>
         <section className="logementSection">
             <Carousel i={thisLogement.pictures}/>
