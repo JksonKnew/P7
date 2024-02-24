@@ -49,6 +49,9 @@
 
         .carouselContainer {
             height: 300px;
+            .carouselCounter {
+                display: none;
+            }
         }
         .infoContainer {
             flex-direction: column;
